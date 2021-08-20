@@ -1,6 +1,6 @@
 # todolist
 
-A new Flutter project.
+fun project to fill wfh time
 
 ## Getting Started
 
