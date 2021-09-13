@@ -25,11 +25,24 @@ class _ToDoPageState extends State<ToDoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Container(
         height: MediaQuery.of(context).size.height,
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
+            CardItems(
+                judul: "UI Home To Do List",
+                deskripsi: "deadline tanggal 20 desember 2021", backgroundcolor: Colors.blue[900], textcolor: Colors.white,),
+            CardItems(judul: "UI Home To Do List", deskripsi: "deskripsi"),
+            CardItems(
+                judul: "UI Home To Do List",
+                deskripsi: "deadline tanggal 20 desember 2021111111111111", backgroundcolor: Colors.red[900], textcolor: Colors.white,),
+            CardItems(judul: "UI Home To Do List", deskripsi: "deskripsi"),
+            CardItems(
+                judul: "UI Home To Do List",
+                deskripsi: "deadline tanggal 20 desember 2021", backgroundcolor: Colors.blue[900], textcolor: Colors.white,),
+            CardItems(judul: "UI Home To Do List", deskripsi: "deskripsi"),
             CardItems(
                 judul: "UI Home To Do List",
                 deskripsi: "deadline tanggal 20 desember 2021", backgroundcolor: Colors.blue[900], textcolor: Colors.white,),

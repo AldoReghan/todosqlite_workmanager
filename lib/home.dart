@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
       child: Scaffold(
           appBar: AppBar(
             elevation: 0,
-            backgroundColor: Color.fromRGBO(38, 38, 38, 0.4),
+            backgroundColor: Colors.black,
             centerTitle: true,
             title: Text(
               "What's Up, Aldo",
@@ -38,17 +38,14 @@ class _HomeState extends State<Home> {
             ),
             flexibleSpace: Container(
               decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: <Color>[Colors.blue, Color(0xFF0D47A1)])),
+                  ),
             ),
             bottom: PreferredSize(
                 child: TabBar(
                   labelStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     isScrollable: true,
                     unselectedLabelColor: Colors.white.withOpacity(0.3),
-                    indicatorColor: Colors.transparent,
+                    indicatorColor: Colors.blue,
                     tabs: [
                       Tab(
                         child: Text('To Do'),

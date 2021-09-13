@@ -17,16 +17,14 @@ class CardItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top:4.0),
+      padding: const EdgeInsets.only(top:4.0, left: 8, right: 8),
       child: Container(
           height: 80,
           child: Card(
             color: backgroundcolor,
-            shadowColor: Colors.blue[900],
-            elevation: 8,
             child: ListTile(
               title: Text(judul, style: TextStyle(fontWeight: FontWeight.bold, color: textcolor),),
-              subtitle: Text(deskripsi, style: TextStyle(color: textcolor),),
+              subtitle: Text(deskripsi, style: TextStyle(color: textcolor),maxLines: 1,overflow: TextOverflow.ellipsis),
               trailing: Wrap(
                 spacing: 12,
                 children: [Icon(Icons.view_list)],
